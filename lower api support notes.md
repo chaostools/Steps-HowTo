@@ -3,7 +3,7 @@ Each screen in your app that is not the main entry point (all screens that are n
 
 All you need to do is declare which activity is the logical parent in the AndroidManifest.xml file. So open the file at app > manifests > AndroidManifest.xml, locate the <activity> tag for DisplayMessageActivity and replace it with the following:
 
-```
+```xml
 <activity android:name=".DisplayMessageActivity"
           android:parentActivityName=".MainActivity">
     <!-- The meta-data tag is required if you support API level 15 and lower -->
