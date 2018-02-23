@@ -1,6 +1,8 @@
 
 # Android Localization Example
 
+http://www.zoftino.com/android-localization-example
+
  February 21, 2018
 
  Since Android system supports multiple languages and allows user to choose language or
