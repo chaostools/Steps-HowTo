@@ -13,6 +13,29 @@ An Android `id` is an integer commonly used to identify views; this `id` can be 
 - Manually set `id`s using `someView.setId(`int`);`
 - The `int` must be positive, but is otherwise arbitrary- it can be whatever you want (keep reading if this is frightful.)
 - *For example, if creating and numbering several views representing items, you could use their item number.*
+- a better approach is using this answer from SO:
+
+>You can set ID's you'll use later in R.id class using an xml resource file, and let Android SDK give them unique values during compile time.
+>
+>
+>**res/values/ids.xml**
+>   ```XML
+>    <?xml version="1.0" encoding="utf-8"?>
+>    <resources>
+>   
+>    	<item name="my_edit_text_1" type="id"/>
+>    	<item name="my_button_1" type="id"/>
+>    	<item name="my_time_picker_1" type="id"/>
+>    
+>    </resources>
+>    ```
+>
+>To use it in code:
+>
+>   ```java
+>    myEditTextView.setId(R.id.my_edit_text_1);
+>   ```
+>
 
 ### Uniqueness of `id`s ###
 - `XML`-assigned `id`s will be unique.
