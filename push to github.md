@@ -1,4 +1,5 @@
 since i dont keep global credentials( good habit i think), there fore:
+0. you can only push changes to the repo that is created/forked in the account you will be using
 1. open empty folder .open terminal there. `git clone <url>` .
 2. close terminal. <b> open terminal in the cloned repository now .</b>
 3. `git init` .
